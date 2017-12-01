@@ -1,0 +1,59 @@
+{% extends "myadmin/base.html" %}
+
+{% block mainbody %}
+	<div class="span9">
+		<h2>
+			订单详情页
+		</h2>
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>
+						id号
+					</th>
+					<th>
+						orderid号
+					</th>
+					<th>
+						goodsid号
+					</th>
+					<th>
+						商品名称
+					</th>
+					<th>
+						单价
+					</th>
+					<th>
+						数量
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in info %}
+				<tr>
+					<td>
+						{{ i.id }}
+					</td>
+					<td>
+						{{ i.orderid }}
+					</td>
+					<td>
+						<span class="badge">{{ i.goodid }}</span>
+					</td>
+					<td>
+						<span class="badge">{{ i.name }}</span>
+					</td>
+					<td>
+						<span class="badge">{{ i.price }}</span>
+					</td>
+					<td>
+						<div class="progress">
+							<div class="bar" style="width: 60%;">{{ i.num }}</div>
+						</div>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+{% endblock %}

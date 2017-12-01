@@ -1,0 +1,99 @@
+{% extends 'myweb/menu.html' %}
+{% load static from staticfiles %}
+{% block link %}
+	<link rel="stylesheet" type="text/css" href="{% static 'myweb/css/cart.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'myweb/css/cart-app.css' %}">
+{% endblock %}
+
+{% block body %}
+	
+   
+    <!-- 导航 E-->
+    <!--  -->
+    <div class="navbar-left" style="margin-top:70px">
+    	<ol class="breadcrumb">
+    		<li class="active">购物车</li>
+    		<li>填写信息</li>
+    		<li>确认订单</li>
+    		<li>我的订单 </li>
+    	</ol>
+    </div>
+    <!-- 导航 E-->
+    <!-- 主内容区域 -->
+    <!-- 主内容区域 -->
+    <div class="container" style="margin-top:100px">
+		<center>
+			<!-- 提交的表b -->
+			<div class="table-responsive" style="margin-top:50px" >
+			  <tr><td align='left'><h2>收货地址</h2></td></tr>
+			  <table style="font-size:20px" cellspacing="5">
+			  <br>
+			  <tr >
+			  	<td align="left">收件人 : </td>
+			  	<td>{{ request.session.express.name }}</td>
+			  </tr>
+
+			  <tr>
+			  	<td align="left">地址 : </td>
+			  	<td>{{ request.session.express.address }}</td>
+			  </tr>
+	
+			  <tr>
+			  	<td align="left">邮编 : </td>
+			  	<td>{{ request.session.express.code }}</td>
+			  </tr>
+	
+			  <tr>
+			  	<td align="left">电话 : </td>
+			  	<td>{{ request.session.express.phone }}</td>
+			  </tr>
+			  </table>
+			  <br>
+			
+			  <br>
+
+			  <span style="font-size:20px">总金额: ¥ <span style="color:red">{{ request.session.total }}</span> 元 </span>
+			  
+s
+			  <button type="button" class="btn btn-success" onclick="window.location='{% url 'orderadd' %}'">付款</button>
+			  
+			</div>
+
+			<br><br><br>
+			<table class="cart-header" style="margin-top:500px,text-align:center" border="1" >
+				<tbody>
+					<tr calss="row" align="center" nalign="center">
+						<td class="cart-col-name col-md-2 hidden-xs hidden-sm">商品</td>
+						<td class="cart-col-name col-md-4 hidden-xs hidden-sm">图片</td>
+						<td class="cart-col-price col-md-3 hidden-xs hidden-sm">单价(元)</td>
+						<td class="cart-col-number col-md-3 hidden-xs hidden-sm">数量</td>
+						<td class="cart-col-total col-md-4 hidden-xs hidden-sm">小计(元)</td>
+					</tr>
+				</tbody>
+				<tbody>
+					{% for i in request.session.orderlist.values %}
+						<tr align="center" nalign="center">
+							<td class="cart-col-name col-md-4 hidden-xs hidden-sm">
+								<div class="col-md-4">
+									<p>{{ i.goods }}</p>
+								</div>
+								
+							</td>
+							<td class="cart-col-name col-md-4 hidden-xs hidden-sm">
+								<div class="col-md-8">
+									<a href="{% url 'detail' i.id %}" class="cart-product-link" target="_blank">
+										<img src="/static/goods/s_{{ i.picname }}" class="cart-product-img" alt="魅蓝 X">
+									</a>
+								</div>
+							</td>
+							<td class="cart-col-price col-md-2 hidden-xs hidden-sm">{{ i.price }}</td>
+							<td class="cart-col-number col-md-2 hidden-xs hidden-sm">{{ i.num }}</td>
+							<td class="cart-col-total col-md-4 hidden-xs hidden-sm">{% widthratio i.price 1 i.num %}</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		<center>
+	</div>
+    <!-- 主内容区域 E-->
+{% endblock %}

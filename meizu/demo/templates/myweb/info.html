@@ -1,0 +1,17 @@
+{% extends 'myweb/menu.html' %}
+{% load static from staticfiles %}
+{% block body %}
+<center>
+	<h2 style="color:red">{{ info }}</h2>
+	<br>
+	<br>
+	<br>
+	<button type="button" class="btn btn-info" style="text-color:white"><a href="{% url 'cartshow' %}">返回购物车添加商品</a></button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<center>
+{% endblock %}

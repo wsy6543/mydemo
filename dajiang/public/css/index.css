@@ -1,0 +1,448 @@
+
+body{
+	background: #F7F8F9;
+}
+
+
+
+/*导航条*/
+.dh{
+	width:100%;
+	/*height:40px;*/
+	margin-bottom:0px;
+}
+
+.badge{
+	background: #44A8F2;
+}
+
+/*搜索区*/
+.ss{
+	/*height:60px;*/
+	width:100%;
+	background: #FFFFFF;
+	line-height:60px;
+	margin-bottom:0px;
+}
+
+.ss ul{
+	margin-top:5px;
+}
+
+.ssp{
+	padding-top:7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*促销区*/
+.cx{
+	background: #fff;
+}
+.cxa{
+	text-align:center;
+}
+
+
+
+/*轮播图*/
+.lbtx{
+	margin-left:0px;
+	margin-top:0px;
+}
+
+/*缩略a区*/
+.slall{
+	margin-top:20px;
+}
+
+.sla{
+	
+}
+
+.slap{
+	margin-bottom:0px;
+	padding-bottom:0px;
+	margin-top:-80px;
+	width:70%;
+}
+
+.slad{
+	height:160px;
+	margin-top:-50px;
+	text-align:center;
+}
+
+.slad span{
+	margin:2px;
+	padding:4px;
+	padding-top:1px;
+	padding-bottom:1px;
+	font-size:5px;
+	border:0.1px solid #707473;
+	color:black;
+}
+
+.slad div{
+	color:red;
+}
+
+
+
+/*缩略b区*/
+.slbll{
+	margin-top:20px;
+}
+
+.slb1{
+	line-height:30px;
+}
+.slb1 div{
+	font-size:17px;
+}
+.slb1 span{
+	font-size:25px;
+}
+
+.slbsp{
+	text-align:center;
+	margin-top:20px;
+}
+
+.slbsp h3{
+	font-size:17px;
+}
+
+.slbsp p{
+	color:#44A8F2;
+}
+
+
+
+/*尾部a*/
+.foota{
+	color:#707473;
+	margin-top:30px;
+	background: #fff;
+}
+.foota1{
+	text-align:center;
+}
+
+
+
+/*尾部b*/
+.footb{
+	color:#979797;
+	margin-top:30px;
+	background: #fff;
+	font-size:11px;
+
+}
+.footb div{
+	margin-top:8px;
+}
+.footb1{
+	margin-top:40px;
+}
+.footb2{
+	text-align:left;
+}
+
+.footb3{
+	color:#707473;
+}
+.footb a{
+	color::#979797;
+}
+
+
+/*尾部c*/
+.footc{
+	margin-top:80px;
+	margin-bottom:30px;
+}
+
+
+.fd{
+	position:fixed;
+	right:15px;
+	bottom:80px;
+
+}
+
+.fd1{
+	width: 50px;
+	height: 50px;
+	border:0.5px solid #848887;
+	border-radius:50%;
+	margin:10px;
+	line-height:50px;
+	text-align:center;
+}
+#fd2{
+	display:none;
+}
+
+
+
+/*详情页面*/
+/*导航路径*/
+.dhlj{
+	color: #A4A4C1;
+}
+
+.dhlj a{
+	color: #A4A4C1;
+}
+.dhlj span{
+	color: #C1A4A4;
+}
+
+/*商品展示区*/
+.spzs1{
+	width:55px;
+	height:40px;
+	display:inline-block;
+	border:1px solid #44A8F2;
+	margin:5px;
+	margin-top:20px;
+}
+
+
+.spzsw{
+	background: #fff;
+}
+.spzsw div{
+	margin:5px;
+}
+.spzsw span{
+	color:#707473;
+}
+
+.spzsw ul{
+	background:#ECF7FE;
+}
+
+
+/*产品说明区*/
+.cpsm{
+	font-size:17px;
+	margin-top:30px;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+.cpsm div{
+	border-bottom:1px solid #EEEEEE;
+	padding:10px;
+}
+.cpsm .cpsm1{
+	color:#44A8F2;
+	border-bottom:1px solid #44A8F2;
+}
+
+.video{
+	margin:10px
+}
+.video div{
+	margin-top:-10px;
+	margin-left:20px;
+}
+.video span{
+	margin-top:-50px;
+}
+
+.cpsmc h3,h2,p{
+	margin-top:15px;
+}
+
+.cpsmb{
+	display:none;
+}
+.cpsmc{
+	display:none;
+}
+
+
+
+
+/*购买页*/
+.buy{
+	line-height:10px;
+	text-align:center;
+	border-bottom:1px solid #EEEEEE;
+}
+.buya1{
+	margin-top:-5px;
+}
+
+.buy .buy_border {
+	border-bottom:1px solid #333333;
+}
+.buycol{
+	color:#44A8F2;
+}
+.buyina{
+
+}
+.buyinb{
+	display:none;
+}
+.buyinc{
+	display:none;
+}
+.buyind{
+	display:none;
+}
+.select1{
+	/*margin:-20px;*/
+}
+.select1a label{
+	height:50px;
+	line-height:50px;
+	width:590px;
+	text-align:left;
+	border:1px solid #000;
+	border-radius:10px;
+	margin:5px;
+}
+.select1a label input{
+	position:relative;
+	top:20px; left:50px;
+}
+.select1a label span{
+	margin-left:25px;
+	font-size:17px;
+}
+.buyina .selected1 label{
+	background: #ECF7FE;
+	border:2px solid #98D0F8;
+}
+.buyina .selected2 label{
+	background: #ECF7FE;
+	border:2px solid #98D0F8;
+}
+.selected3{
+	background: #ECF7FE;
+	border:2px solid #98D0F8;
+}
+
+
+#tgd{
+	line-height:60px;
+	margin-top:7px;
+}
+
+
+.yyg{
+	height:500px;
+}
+
+
+#zk{
+	width: 100%;
+	height: 100px;
+}
+/*下一步区*/
+.xyb{
+	width:100%;
+	background: white;
+	position:fixed;
+	bottom:0px;
+	height:90px;
+	line-height:90px;
+}
+
+@media (max-width:640px){
+	    .xyb{
+	    	width:100%;
+	    	background: white;
+	    	text-align:center;
+	
+	    }
+	    .xyb #hide{
+	    	display:none;
+	    }
+}
+
+
+.pja{
+	margin:10px;
+	border:1px solid #ddd;
+}
+.pjb{
+	text-align:center;
+	margin-top:9px;
+}
+
+
+.btn_pj_down{
+	width:24px;
+}
+.num{
+	margin-left:6px;
+}
+
+/*便签3图片的默认隐藏设置*/
+.ewtz2{
+	display:none;
+}
+
+
+
+/*搜索区特效*/
+
+
+.aj{
+	display:none;
+}
+.bj{
+	display:none;
+}
+.cj{
+	display:none;
+}
+
+@media (min-width:640px){
+	    .a{
+			background: white;
+	    	height:89px;
+	    	margin:0px;
+	    	padding:0px;
+	    }
+	
+	    .b{
+			background: white;
+	    	height:89px;
+	    	margin:0px;
+	    	padding:0px;
+	    }
+	    .c{
+			background: white;
+	    	height:89px;
+	    	margin:0px;
+	    	padding:0px;
+	    }
+
+	    .mar li{
+			margin:16px;
+			list-style:none;
+			text-align:left;
+		}
+
+		.ajj2{
+			display:none;
+		}
+		.ajj3{
+			display:none;
+		}
+}

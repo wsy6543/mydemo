@@ -1,0 +1,77 @@
+{% extends "myadmin/base.html" %}
+
+{% block mainbody %}
+	<div class="span9">
+		<h2>
+			订单页
+		</h2>
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>
+						id号
+					</th>
+					<th>
+						uid号
+					</th>
+					<th>
+						联系人
+					</th>
+					<th>
+						地址
+					</th>
+					<th>
+						邮编
+					</th>
+					<th>
+						电话
+					</th>
+					<th>
+						下单时间
+					</th>
+					<th>
+						总价
+					</th>
+					<th>
+						订单状态
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in info %}
+				<tr>
+					<td>
+						{{ i.id }}
+					</td>
+					<td>
+						{{ i.uid }}
+					</td>
+					<td>
+						<span class="badge">{{ i.linkman }}</span>
+					</td>
+					<td>
+						<span class="badge">{{ i.address }}</span>
+					</td>
+					<td>
+						<span class="badge">{{ i.code }}</span>
+					</td>
+					<td>
+						<div class="progress">
+							<div class="bar" style="width: 100%;">{{ i.phone }}</div>
+						</div>
+					</td>
+					<td>
+						{{ i.addtime }}
+					</td>
+					<td>
+						{{ i.total }}
+					</td>
+					<td>
+						{{ i.status }}
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+{% endblock %}

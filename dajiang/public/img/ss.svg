@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="导航规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="导航" transform="translate(-1536.000000, -135.000000)">
+            <g id="Group" transform="translate(1537.000000, 136.000000)">
+                <g id="Group-6-Copy">
+                    <rect id="Rectangle-4" fill="#707473" transform="translate(8.437500, 8.941176) rotate(-45.000000) translate(-8.437500, -8.941176) " x="7.5" y="0.941176471" width="1.875" height="16" rx="0.9375"></rect>
+                    <ellipse id="Oval-4" stroke="#707473" fill="#FFFFFF" cx="5.625" cy="5.64705882" rx="5.625" ry="5.64705882"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
